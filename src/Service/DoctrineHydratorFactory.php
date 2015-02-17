@@ -342,6 +342,10 @@ class DoctrineHydratorFactory implements AbstractFactoryInterface
             if ($filterService instanceof ObjectManagerAwareInterface) {
                 $filterService->setObjectManager($objectManager);
             }
+
+            if (isset($filterConfig['options'])) {
+                $filterService->setOptions($filterConfig['options']);
+            }
             $hydrator->addFilter($name, $filterService, $condition);
         }
     }
