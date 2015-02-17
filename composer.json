@@ -1,5 +1,5 @@
 {
-    "name": "phpro/zf-doctrine-hydration-module",
+    "name": "noc-med/zf-doctrine-hydration-module",
     "license": "MIT",
     "description": "Doctrine hydrators for ZF2",
     "keywords": [
